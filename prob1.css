@@ -1,0 +1,43 @@
+
+header,
+footer {
+    padding: 10px;
+    background-color: #999999
+}
+aside {
+    border-right: 1px solid #999;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+            "header header"
+            "items items"
+            "content sidebar"
+            "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 5px;
+}
+
+header {
+    grid-area: header;
+}
+
+article {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+u{
+    grid-area: items;
+}
+
+footer {
+    grid-area: footer;
+}
+
+u{
+background-color: blue;
+    padding: 5px
+}
